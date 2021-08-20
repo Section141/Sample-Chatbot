@@ -20,7 +20,7 @@ def clean_up_sentence(sentence):
     sentence_words = [lemmatizer.lemmatize(word.lower()) for word in sentence_words]
     return sentence_words
 
-# return bag of words array: 0 or 1 for each word in the bag that exists in the sentence
+# return bag of words array:
 
 def bow(sentence, words, show_details=True):
     # tokenize the pattern
@@ -109,7 +109,6 @@ EntryBox = Text(base, bd=0, bg="white",width="29", height="5", font="Arial")
 #EntryBox.bind("<Return>", send)
 
 
-#Place all components on the screen
 scrollbar.place(x=376,y=6, height=386)
 ChatLog.place(x=6,y=6, height=386, width=370)
 EntryBox.place(x=128, y=401, height=90, width=265)
